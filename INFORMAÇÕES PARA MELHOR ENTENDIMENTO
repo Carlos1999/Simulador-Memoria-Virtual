@@ -1,0 +1,21 @@
+1- O programa irá executar automáticamente sem interação com o usuário, após a execução do arquivo main;
+
+2- a partir do momento em que o main for executado ele irá começar a pegar os processos do disco e inserir na memória;
+
+3- caso o tamanho do processo seja maior do que o tamanho máximo da página, o programa vai dividir o processo em N partes e incerir cada parte em uma página;
+
+4- caso uma processo seja retirado da memória, para entrada de um novo, se ele não tiver terminado de executar( estiver com tempo de execução > 0) ele retornará para o 
+disco;
+
+5- O algorítimo de paginação usado foi o CLOCK;
+
+6- A memória virtual está organizada em: BitR| Tempo de entrada do processo na memória| Índice da página (apenas para entendimento)| Índice do processo
+
+7- A memória física está organizada em : Mapa De Bits( 0 = livre, 1 = ocupado) |endereço inicial na memória|endereço final na memória| Processo
+
+8- Como foi definido pela tarefa, o processo está dividido em: Indentificador do processo| Tamanho| Tempo restante para terminar de executar| tempo para tentar acessar disco
+
+9- Quando o tempo restante para terminar de executar for 0, o processo será apagado, não volta para o disco;
+
+10- Ao final da execução o arquivo será preenchido novamente de forma automática, caso queira inserir manualmente no arquivo os processos não haverá nenhum problema,
+foi feito dessa forma apenas para facilitar os testes.
